@@ -4,10 +4,20 @@ A hello weex demo.
 
 跑个 Demo 学习一下
 
-![](./art/hello-weex.png)
+## 常用命令
+
+```
+weex create project-name  # 创建项目
+
+weex preview src/foo.vue # 预览单个文件
+
+weex platform add/remove android
+
+weex run andoird/ios/web
+```
 
 
-## 资料
+## 学习资料
 
 github : https://github.com/apache/incubator-weex
 
@@ -15,8 +25,10 @@ github : https://github.com/apache/incubator-weex
 
 weex api : https://weex.apache.org/cn/references/android-apis.html
 
-
 playground : http://dotwe.org/vue/563f025083b735aa75d5fb7e38a0b36e
+
+weex-toolkit : https://weex.apache.org/cn/tools/toolkit.html
+
 
 Rax : https://alibaba.github.io/rax/guide
 
