@@ -32,3 +32,6 @@ weex-toolkit : https://weex.apache.org/cn/tools/toolkit.html
 
 Rax : https://alibaba.github.io/rax/guide
 
+Vue : https://vuejs.org/
+
+其他 resources : https://weex.apache.org/cn/resources.html
