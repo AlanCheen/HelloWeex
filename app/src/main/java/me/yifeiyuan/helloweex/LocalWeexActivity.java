@@ -10,7 +10,10 @@ import com.taobao.weex.WXSDKInstance;
 import com.taobao.weex.common.WXRenderStrategy;
 import com.taobao.weex.utils.WXFileUtils;
 
-public class WeexActivity extends AppCompatActivity implements IWXRenderListener {
+/**
+ * 加载 local 的 jsbundle
+ */
+public class LocalWeexActivity extends AppCompatActivity implements IWXRenderListener {
 
     private static final String TAG = "WeexActivity";
 
@@ -31,7 +34,8 @@ public class WeexActivity extends AppCompatActivity implements IWXRenderListener
          * width 为-1 默认全屏，可以自己定制。
          * height =-1 默认全屏，可以自己定制。
          */
-        mWXSDKInstance.render("WXSample", WXFileUtils.loadFileContent("index.js", this), null, null, -1, -1, WXRenderStrategy.APPEND_ASYNC);
+
+        mWXSDKInstance.render("Local jsbundle", WXFileUtils.loadAsset("local-bundle-test.js",this),null, null, WXRenderStrategy.APPEND_ASYNC);
     }
 
     @Override
